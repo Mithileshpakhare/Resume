@@ -458,3 +458,151 @@ header nav ul li .active {
     font-size: 1.2em;
     color: #666;
 }
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    header {
+        padding: 36px 50px;
+    }
+
+    .landing .intro h3,
+    .intro button {
+        margin-left: 5vw;
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        padding: 36px 20px;
+    }
+
+    .landing .intro h3 {
+        font-size: 28px;
+    }
+
+    .landing .intro h3 span {
+        font-size: 3rem;
+    }
+
+    .intro button {
+        height: 44px;
+        width: 128px;
+        font-size: 14px;
+    }
+
+    .about,
+    .skills,
+    .portfolio,
+    .contact-me {
+        padding: 50px;
+    }
+
+    .portfolio-cards {
+        grid-template-columns: auto auto;
+    }
+
+    .experience h1 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        display: none;
+    }
+
+    header nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .landing {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 70vh;
+    }
+
+    .landing .intro h3,
+    .intro button {
+        margin-left: 0;
+    }
+
+    .intro button {
+        margin-top: 1.5vh;
+    }
+
+    .socials {
+        margin-top: 25vh;
+    }
+
+    .about,
+    .skills,
+    .portfolio,
+    .contact-me {
+        padding: 30px;
+    }
+
+    .skills h1,
+    .portfolio h1,
+    .experience h1,
+    .contact-me h3 {
+        font-size: 40px;
+    }
+
+    .portfolio-cards {
+        grid-template-columns: auto;
+    }
+
+    .portfolio-card {
+        height: 50vw;
+        width: 90vw;
+    }
+
+    .portfolio-card img {
+        height: 50vw;
+        width: 90vw;
+    }
+
+    .portfolio-card .overlay {
+        height: 50vw;
+        width: 70vw;
+    }
+
+    .portfolio-card .overlay h3,
+    .portfolio-card .overlay p {
+        font-size: 18px;
+    }
+
+    .experience {
+        padding: 20px;
+    }
+
+    .lighter-div .exp {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 576px) {
+    .about h1,
+    .skills h1,
+    .portfolio h1,
+    .experience h1,
+    .contact-me h3 {
+        font-size: 32px;
+    }
+
+    .experience h1 {
+        left: 10%;
+        top: 15%;
+    }
+
+    .lighter-div .exp h2 {
+        font-size: 24px;
+    }
+
+    .lighter-div .exp-desc h3,
+    .lighter-div .exp-desc p {
+        font-size: 14px;
+    }
+}
