@@ -236,8 +236,8 @@ header nav ul li .active {
     color: #fbfbfb;
 }
 
-/* Portfolio section */
-.portfolio {
+/* Project section */
+.project {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -245,21 +245,21 @@ header nav ul li .active {
     padding: 50px 100px;
 }
 
-.portfolio h1 {
+.project h1 {
     font-size: 56px;
     font-weight: 700;
     color: #fbfbfb;
     font-family: "Libre Baskerville", serif;
 }
 
-.portfolio-cards {
+.project-cards {
     display: grid;
     grid-template-columns: auto auto auto;
     margin-top: 40px;
     gap: 2.5vh;
 }
 
-.portfolio-card {
+.project-card {
     position: relative;
     height: 25vw;
     width: 45vw;
@@ -272,7 +272,7 @@ header nav ul li .active {
     transition: all 0.5s ease;
 }
 
-.portfolio-card img {
+.project-card img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -282,7 +282,7 @@ header nav ul li .active {
     object-fit: cover;
 }
 
-.portfolio-card .overlay {
+.project-card .overlay {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -300,105 +300,33 @@ header nav ul li .active {
     transition: all 0.5s ease;
 }
 
-.portfolio-card .overlay h3 {
+.project-card .overlay h3 {
     color: #fbfbfb;
     font-size: 24px;
 }
 
-.portfolio-card .overlay p {
+.project-card .overlay p {
     color: #fbfbfb;
     font-size: 16px;
     text-align: center;
 }
 
-.portfolio-card .overlay:hover {
+.project-card:hover .overlay {
     opacity: 1;
 }
 
-/* Experience section */
-.experience {
+/* Footer */
+footer {
     display: flex;
-    flex-direction: column;
-    width: 100vw;
-    position: relative;
     align-items: center;
     justify-content: center;
-}
-
-.darker-div {
-    background-color: #34353a;
-    width: 100vw;
-    height: 10vh;
-}
-
-.experience h1 {
-    position: absolute;
-    color: #fbfbfb;
-    font-size: 56px;
-    font-family: "Libre Baskerville", serif;
-    transform: translate(-50%, -50%);
-    top: 10%;
-    left: 15%;
-}
-
-.lighter-div {
     background-color: #3d3e42;
+    height: 10vh;
     width: 100vw;
-    padding: 10vh;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
 }
 
-.lighter-div .exp {
-    height: 30vh;
-    width: 50vw;
-    position: relative;
-    margin-left: 20vh;
-}
-
-.exp h2 {
+footer p {
     color: #fbfbfb;
-    font-size: 32px;
-    font-weight: 400;
-}
-
-.exp h2::before {
-    content: "";
-    height: 20px;
-    width: 20px;
-    color: #fec86a;
-    background-color: #fec86a;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 7.5%;
-    left: -5%;
-    border-radius: 50%;
-    box-shadow: 0px 0px 20px 5px #fec86a;
-}
-
-.exp-desc::before {
-    content: "";
-    height: 190px;
-    width: 2.5px;
-    background-color: #fbfbfb;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 55%;
-    left: -5%;
-}
-
-.exp-desc h3 {
-    color: #fbfbfb;
-    font-size: 20px;
-    font-weight: 400;
-    margin: 10px 0;
-}
-
-.exp-desc p {
-    color: #fbfbfb;
-    font-size: 16px;
-    font-weight: 400;
 }
 
 /* Contact section */
@@ -432,7 +360,96 @@ header nav ul li .active {
     margin-top: 7.5vh;
 }
 
+/* Experience section */
+.intern {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.darker-div {
+    background-color: #34353a;
+    width: 100vw;
+    height: 10vh;
+}
+
+.intern h1 {
+    font-size: 56px;
+    font-weight: 700;
+    color: #fbfbfb;
+    font-family: "Libre Baskerville", serif;
+    margin-bottom: 40px;
+}
+
+.lighter-div {
+    background-color: #3d3e42;
+    width: 100vw;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.lighter-div .exp {
+    width: 80%;
+    max-width: 800px;
+    background-color: #424448;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.exp h2 {
+    color: #fbfbfb;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.exp h3 {
+    color: #fbfbfb;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.exp p {
+    color: #fbfbfb;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.exp .role {
+    color: #fec86a;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.exp .duration {
+    font-size: 16px;
+    color: #fbfbfb;
+    margin-top: 5px;
+}
+
 /* Education section */
+.education {
+    padding: 50px 100px;
+    background-color: #34353b;
+    color: #fbfbfb;
+}
+
+.education h1 {
+    font-size: 56px;
+    font-weight: 700;
+    font-family: "Libre Baskerville", serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .education-cards {
     display: flex;
     flex-wrap: wrap;
@@ -441,168 +458,177 @@ header nav ul li .active {
 }
 
 .education-card {
-    background-color: #fff;
+    background-color: #3d3e42;
+    border-radius: 20px;
     padding: 20px;
-    border-radius: 10px;
+    width: calc(50% - 20px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 300px;
+    transition: all 0.5s ease;
 }
 
-.education-card .exp-desc h2 {
-    font-size: 1.5em;
+.education-card:hover {
+    background-color: #fec86a;
+    color: #34353b;
+}
+
+.exp-desc h2 {
+    font-size: 24px;
+    font-weight: 500;
     margin-bottom: 10px;
 }
 
-.education-card .exp-desc h3 {
-    font-size: 1.2em;
-    color: #666;
+.exp-desc h3 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 5px;
 }
 
-/* Media Queries */
-@media (max-width: 1200px) {
+/* Responsive media queries */
+@media (max-width: 992px) {
     header {
         padding: 36px 50px;
     }
 
-    .landing .intro h3,
-    .intro button {
-        margin-left: 5vw;
-    }
-}
-
-@media (max-width: 992px) {
-    header {
-        padding: 36px 20px;
-    }
-
     .landing .intro h3 {
         font-size: 28px;
-    }
-
-    .landing .intro h3 span {
-        font-size: 3rem;
+        margin-left: 5vw;
     }
 
     .intro button {
-        height: 44px;
-        width: 128px;
-        font-size: 14px;
+        height: 48px;
+        width: 144px;
+        margin-left: 5vw;
     }
 
-    .about,
-    .skills,
-    .portfolio,
-    .contact-me {
-        padding: 50px;
+    .about {
+        padding: 100px 50px;
     }
 
-    .portfolio-cards {
-        grid-template-columns: auto auto;
+    .skills, .project, .intern {
+        padding: 50px 50px;
     }
 
-    .experience h1 {
-        font-size: 48px;
+    .cards, .project-cards {
+        flex-direction: column;
+    }
+
+    .project-card {
+        width: 80vw;
+    }
+
+    .lighter-div .exp {
+        width: 80vw;
+        margin-left: 0;
+    }
+
+    .exp p {
+        width: 80vw;
+    }
+
+    .education {
+        padding: 50px 50px;
+    }
+
+    .education-card {
+        width: calc(100% - 20px);
     }
 }
 
 @media (max-width: 768px) {
+    header {
+        padding: 36px 20px;
+    }
+
     header nav ul {
-        display: none;
-    }
-
-    header nav {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .landing {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        height: 70vh;
-    }
-
-    .landing .intro h3,
-    .intro button {
         margin-left: 0;
     }
 
-    .intro button {
-        margin-top: 1.5vh;
+    header nav ul li {
+        margin: 0 10px;
     }
 
-    .socials {
-        margin-top: 25vh;
+    .landing .intro h3 {
+        font-size: 24px;
     }
 
-    .about,
-    .skills,
-    .portfolio,
-    .contact-me {
-        padding: 30px;
+    .about {
+        padding: 50px 20px;
     }
 
-    .skills h1,
-    .portfolio h1,
-    .experience h1,
-    .contact-me h3 {
-        font-size: 40px;
+    .skills, .project, .intern {
+        padding: 20px 20px;
     }
 
-    .portfolio-cards {
-        grid-template-columns: auto;
+    .skill-card {
+        height: 30vw;
+        width: 80vw;
     }
 
-    .portfolio-card {
+    .project-card {
+        width: 100vw;
         height: 50vw;
-        width: 90vw;
     }
 
-    .portfolio-card img {
-        height: 50vw;
-        width: 90vw;
+    .exp {
+        width: 100vw;
     }
 
-    .portfolio-card .overlay {
-        height: 50vw;
-        width: 70vw;
+    .exp p {
+        width: 100vw;
     }
 
-    .portfolio-card .overlay h3,
-    .portfolio-card .overlay p {
-        font-size: 18px;
-    }
-
-    .experience {
-        padding: 20px;
-    }
-
-    .lighter-div .exp {
-        width: 90vw;
+    .education {
+        padding: 50px 20px;
     }
 }
 
 @media (max-width: 576px) {
-    .about h1,
-    .skills h1,
-    .portfolio h1,
-    .experience h1,
-    .contact-me h3 {
+    header nav {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    .landing .intro h3 {
+        font-size: 20px;
+    }
+
+    .intro button {
+        height: 36px;
+        width: 120px;
+    }
+
+    .about h1, .skills h1, .project h1, .intern h1 {
         font-size: 32px;
     }
 
-    .experience h1 {
-        left: 10%;
-        top: 15%;
+    .project-card {
+        width: 100%;
+        height: auto;
     }
 
-    .lighter-div .exp h2 {
-        font-size: 24px;
+    .skill-card {
+        height: auto;
+        width: 100%;
     }
 
-    .lighter-div .exp-desc h3,
-    .lighter-div .exp-desc p {
-        font-size: 14px;
+    .education h1 {
+        font-size: 32px;
+    }
+
+    .exp-desc h2 {
+        font-size: 20px;
+    }
+
+    .exp-desc h3 {
+        font-size: 16px;
     }
 }

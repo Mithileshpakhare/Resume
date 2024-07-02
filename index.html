@@ -84,17 +84,17 @@
         </div>
     </section>
 
-    <section class="portfolio" id="project">
+    <section class="project" id="project">
         <h1>Projects</h1>
-        <div class="portfolio-cards">
-            <div class="portfolio-card">
+        <div class="project-cards">
+            <div class="project-card">
                 <img src="asset/todo.png" alt="Portfolio 1">
                 <div class="overlay">
                     <h3>To-Do List App with Firebase</h3>
                     <p>Developed intuitive user interface using React components.<br>Implemented dynamic task management features.</p>
                 </div>
             </div>
-            <div class="portfolio-card">
+            <div class="project-card">
                 <img src="asset/quiz.png" alt="Portfolio 2">
                 <div class="overlay">
                     <h3>Web Development Quiz</h3>
@@ -104,7 +104,7 @@
         </div>
     </section>
 
-    <section class="portfolio" id="internship">
+    <section class="intern" id="internship">
         <h1>Internships</h1>
         <div class="lighter-div">
             <div class="exp">
@@ -136,7 +136,7 @@
         </div>
     </section>
 
-    <section class="portfolio" id="education">
+    <section class="education" id="education">
         <h1>Education</h1>
         <br>
         <div class="education-cards">
@@ -192,5 +192,18 @@
             </div>
         </div>
     </section>
+
+    <footer>
+        <p>&copy; 2024 Mithilesh Pakhare. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('nav ul');
+
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
 </body>
 </html>
